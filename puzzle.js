@@ -46,7 +46,7 @@ function buildTile(color){
             revealedCount += 2;
 
             if(revealedCount ===tileCount){
-                alert("Yyou win! Refresh to play again")
+                alert("You win! Refresh to play again")
 
             }
             return;

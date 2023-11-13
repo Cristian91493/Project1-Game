@@ -1,19 +1,22 @@
 .pz-image {
     /* The image used */
-    background: url("Images/lake.jpg");
+    background: url("Images/lake.jpg") no-repeat fixed center;
   
     /* Add the blur effect */
     filter: blur(8px);
     -webkit-filter: blur(8px);
   
     /* Full height */
-    height: 100%;
-    width:100%;
+    height: 100vh;
+    width:100vw;
 
-    /* Center and scale the image nicely */
+    /* Center and scale the image nicely
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+position:absolute;
+
+z-index: -1;
 }
 
 

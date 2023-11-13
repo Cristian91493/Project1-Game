@@ -1,0 +1,35 @@
+.pz-image {
+    /* The image used */
+    background: url("Images/lake.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+    width:100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.tiles{
+margin: 48 px auto;
+width: max-content;
+display: grid;
+grid-template-columns: repeat(4,100px);
+gap: 16px;
+
+}
+
+.tile{
+height: 100px;
+background-color: #111111;
+border: 5px solid #444444;
+cursor: pointer;
+
+}

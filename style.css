@@ -1,11 +1,12 @@
 .progress{
-    width:210px;
+    width:300px;
     height:30px;
     background: #9cbab4;
     border-radius: 5px;
     overflow: hidden;
-    position:relative;
-
+    position:absolute;
+    bottom:10%;
+    left:40%;
 }
 
 .progress__fill{
@@ -25,9 +26,27 @@
 
 body{
     background: url("Images/lake.jpg") no-repeat fixed center;
+    margin: 0;
 }
-.fishing-container{
+
+/* .pz-image{
+    * {
+        box-sizing: border-box;
+    }
+} */
+
+/* .fishing-container{
     position: relative;
+    height: 400px;
+    width:400px;
+    background-color: whitesmoke;
+    z-index: 1;
+    top:50%;
+    left:50%;
+} */
+@keyframes wade{
+    from{width:160px}
+    to{width:200px}
 }
 
 .ripple{
@@ -36,6 +55,16 @@ body{
     width: 160px;
     bottom: 20%;
     left: 50%;
+    animation-name: wade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    visibility:visible;
+}
+
+@keyframes bobbing{
+    from{bottom:25%}
+    to{bottom:27%}
 }
 
 .bobber{
@@ -46,18 +75,47 @@ body{
     left:57%;
     z-index: 1;
     visibility: visible;
+    animation-name: bobbing;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
+@keyframes splashing{
+    from{height:10px}
+    to{height:200px}
 }
 .splash{
     height: 200px;
     width: 200px;
     visibility:hidden;
+    bottom:20%;
+    left:50%;
+    position: absolute;
+    animation-name: splashing;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
 
 }
+@keyframes fish-on-hook{
+    from{transform: rotate(0deg);}
+    to{transform:rotate(30deg)}
+}
+
+@keyframes nothing-on-hook{
+    from{transform: rotate(0deg);}
+    to{transform:rotate(5deg)}
+}
+
 .fishing-rod{
     position: fixed;
     height:500px;
     width:auto;
     left:20%;
     bottom: 10%;
+    animation-name: nothing-on-hook;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }

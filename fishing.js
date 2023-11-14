@@ -12,26 +12,29 @@ pBar = document.querySelector(".progress")
 let timeLeft= 100
 let timeToFour= 0
 
-function tenToZero(){
-    setInterval(function(){
-        if(timeLeft>=0){
-            timeLeft =- 10 }
-        } , 1000)
-    }
+// function tenToZero(){
+//     setInterval(function(){
+//         if(timeLeft>=0){
+//             timeLeft =- 10 }
+//         } , 1000)}
+
+
     //count from 10 to 0
     // for(let i=10;i>=0; i--){
         //     setInterval(console.log(i),i*10000)
         // }
         
-setInterval(function(){
-    if(timeLeft>=1){
-        console.log(timeLeft)
-        timeLeft= timeLeft-10
-        updateProgressBar(pBar, timeLeft)   
-    }},1000)
+setInterval(function zeroToFour(){
+    if(timeToFour<=30){
+                timeToFour+= 10
+                updateProgressBar(pBar, timeToFour)   
+            }},1000)
 
 console.log(timeLeft)
 
-function zeroToFour(){
 
-}
+// setInterval(function tenToZero(){
+//     if(timeLeft>=1){
+//         timeLeft= timeLeft-10
+//         updateProgressBar(pBar, timeLeft)   
+//     }},1000)

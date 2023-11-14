@@ -1,6 +1,6 @@
-function updateProgressBar(progressBar, value){
+function updateProgressBar(progressBar, value, percentage){
     value = Math.round(value)
-    progressBar.querySelector(".progress__fill").style.width = `${value}%`
+    progressBar.querySelector(".progress__fill").style.width = `${percentage}%`
     progressBar.querySelector(".progress__text").innerText = `${value/10} Secs`
 }
 
@@ -12,29 +12,19 @@ pBar = document.querySelector(".progress")
 let timeLeft= 100
 let timeToFour= 0
 
-// function tenToZero(){
-//     setInterval(function(){
-//         if(timeLeft>=0){
-//             timeLeft =- 10 }
-//         } , 1000)}
 
+//need to put the lines below into functions to be called on later
+//also should make a progress bar for each one or find a way to use the same for both
 
-    //count from 10 to 0
-    // for(let i=10;i>=0; i--){
-        //     setInterval(console.log(i),i*10000)
-        // }
-        
-setInterval(function zeroToFour(){
-    if(timeToFour<=30){
-                timeToFour+= 10
-                updateProgressBar(pBar, timeToFour)   
-            }},1000)
-
-console.log(timeLeft)
+// setInterval(function zeroToFour(){
+//     if(timeToFour<=30){
+//                 timeToFour+= 10
+//                 updateProgressBar(pBar, timeToFour,timeToFour*2.5)   
+//             }},1000)
 
 
 // setInterval(function tenToZero(){
 //     if(timeLeft>=1){
 //         timeLeft= timeLeft-10
-//         updateProgressBar(pBar, timeLeft)   
-//     }},1000)
+//         updateProgressBar(pBar, timeLeft, timeLeft)   
+//     }},1000) 

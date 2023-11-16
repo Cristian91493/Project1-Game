@@ -7,6 +7,7 @@
     position:absolute;
     bottom:10%;
     left:40%;
+    visibility: hidden;
 }
 
 .progress__fill{
@@ -119,7 +120,7 @@ cursor: pointer;
     bottom:25%;
     left:57%;
     z-index: 1;
-    visibility: visible;
+    visibility: hidden;
     animation-name: bobbing;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
@@ -133,7 +134,7 @@ cursor: pointer;
 .splash{
     height: 200px;
     width: 200px;
-    visibility:visible;
+    visibility:hidden;
     bottom:20%;
     left:50%;
     position: absolute;
@@ -160,8 +161,9 @@ cursor: pointer;
     width:auto;
     left:20%;
     bottom: 10%;
-    animation-name: fish-on-hook;
+    animation-name: nothing-on-hook;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    visibility: hidden;
 }

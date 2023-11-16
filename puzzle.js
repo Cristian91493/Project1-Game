@@ -46,7 +46,11 @@ function buildTile(color){
             revealedCount += 2;
 
             if(revealedCount ===tileCount){
-                alert("You win! Refresh to play again")
+                // alert("You win! Refresh to play again")
+                if(confirm("You win! Enjoy Your reward!")){
+                    let url = "reward.html"
+                    window.location.href = url
+                }
 
             }
             return;

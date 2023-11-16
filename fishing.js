@@ -1,3 +1,4 @@
+//function for timer for 10 second count down
 function updateProgressBar(progressBar, value, percentage){
     value = Math.round(value)
     progressBar.querySelector(".progress__fill").style.width = `${percentage}%`
@@ -82,13 +83,13 @@ function startPuzzle(){
     })
 }
 
-function backToGame(){
+export function backToGame(){
     window.location.href = "index.html"
 }
 
-function toReward(){
-    window.location.href = "reward.html"
-}
+// export function toReward(){
+//     return window.location.href = "reward.html"
+// }
 
 function gamePlay(){
     ripple.addEventListener("click", () => {

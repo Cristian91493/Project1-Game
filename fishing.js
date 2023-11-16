@@ -46,7 +46,9 @@ bobber = document.querySelector(".bobber")
 splash = document.querySelector(".splash")
 fishingRod= document.querySelector(".fishing-rod")
 progress= document.querySelector(".progress")
+// rewardButton = document.querySelector("end-reward")
 
+// console.log(rewardButton)
 function castingForFish(){
     
         bobber.style.visibility="visible"
@@ -83,9 +85,10 @@ function startPuzzle(){
     })
 }
 
-export function backToGame(){
-    window.location.href = "index.html"
-}
+// function backToGame(){
+//     window.location.href = "index.html"
+// }
+// rewardButton.addEventListener("click", backToGame)
 
 // export function toReward(){
 //     return window.location.href = "reward.html"

@@ -105,7 +105,18 @@ function gamePlay(){
     }
     gamePlay()
     
+class Fish {
+    constructor(){
+        this.name  = nameOfFish;
+        this.tokens = tokens;
+        this.healthPoints = healthPoints
+        this.picture = picture
+    }
+}
 
+let fishTypes = []
+
+let inventory = []
 
 
 

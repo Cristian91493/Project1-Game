@@ -5,6 +5,16 @@ function updateProgressBar(progressBar, value, percentage){
 }
 pBar = document.querySelector(".progress")
 
+//function for the timer for the 4 second count
+function updateFishingBar(fishingProgressBar, value, percentage){
+    value = Math.round(value)
+    fishingProgressBar.querySelector(".fishing__progress__fill").style.width = `${percentage}%`
+    fishingProgressBar.querySelector(".fishing__progress__text").innerText = `${value/10} Secs`
+}
+fBar = document.querySelector(".fishing__progress")
+
+
+
 
 // function updateFishigBar()
 
@@ -25,8 +35,6 @@ setInterval(function(){
         timeLeft= timeLeft-10
         console.log(timeLeft)
         updateProgressBar(pBar, timeLeft, timeLeft)  
-        
-
     }
 },1000 )
 }
@@ -68,14 +76,19 @@ function fishOnHook(){
           
     }
     
-    function startPuzzle(){
-        splash.addEventListener("click",() => {
-            window.location.href = "puzzle.html"; 
-        })
+function startPuzzle(){
+    splash.addEventListener("click",() => {
+    window.location.href = "puzzle.html"; 
+    })
 }
 
+function backToGame(){
+    window.location.href = "index.html"
+}
 
-
+function toReward(){
+    window.location.href = "reward.html"
+}
 
 function gamePlay(){
     ripple.addEventListener("click", () => {

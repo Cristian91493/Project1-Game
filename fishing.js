@@ -3,9 +3,10 @@ function updateProgressBar(progressBar, value, percentage){
     progressBar.querySelector(".progress__fill").style.width = `${percentage}%`
     progressBar.querySelector(".progress__text").innerText = `${value/10} Secs`
 }
-
 pBar = document.querySelector(".progress")
 
+
+// function updateFishigBar()
 
 let timeLeft= 100
 let timeToFour= 0
@@ -48,56 +49,105 @@ function castingForFish(){
             bobber.style.visibility="hidden"
             fishingRod.style.visibility = "hidden"
             progress.style.visibility="hidden"}
-            timeLeft= 100
         },10000)
 }
 
 
-
+// need to make this work
 function fishOnHook(){ 
     let chance= Math.floor(Math.random()*13-3)
     console.log(chance)
     if(chance >= 0){
         setTimeout(()=>{
+            clearInterval(castingForFish)
             bobber.style.visibility = "hidden"
             progress.style.visibility = "hidden"
-            splash.style.visiblity = "visible"
+            splash.style.visibility = "visible"
             fishingRod.style.animationName = "fish-on-hook"
-            
-
-        },chance*1000)
+        },chance*1000)}
+          
     }
-    splash.addEventListener("click",() => {
-        window.location.href = "puzzle.html";
-        
-    })
+    
+    function startPuzzle(){
+        splash.addEventListener("click",() => {
+            window.location.href = "puzzle.html"; 
+        })
 }
 
-// fishOnHook()
+
+
 
 function gamePlay(){
     ripple.addEventListener("click", () => {
         castingForFish()
-        // fishOnHook()
+        timeLeft=100
+        fishOnHook()
+        zeroToFour()
+        startPuzzle()
     })
     }
     gamePlay()
-//     gamePlay()
-// function gamePlay(){
-// ripple.addEventListener("click", () => {
-//     bobber.style.visibility="visible"
-//     fishingRod.style.visibility = "visible"
-//     progress.style.visibility = "visible"
-//     tenToZero()
-//     setTimeout(()=>{
-//         if(timeLeft <= 0){
-//         bobber.style.visibility="hidden"
-//         fishingRod.style.visibility = "hidden"
-//         progress.style.visibility="hidden"}
-//         timeLeft= 100
-//     },10000)
-// })
-// }           
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     
+    //     gamePlay()
+    // function gamePlay(){
+    // ripple.addEventListener("click", () => {
+    //     bobber.style.visibility="visible"
+    //     fishingRod.style.visibility = "visible"
+    //     progress.style.visibility = "visible"
+    //     tenToZero()
+    //     setTimeout(()=>{
+    //         if(timeLeft <= 0){
+    //         bobber.style.visibility="hidden"
+    //         fishingRod.style.visibility = "hidden"
+    //         progress.style.visibility="hidden"}
+    //         timeLeft= 100
+    //     },10000)
+    // })
+    // }           

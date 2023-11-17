@@ -138,17 +138,7 @@ function gamePlay(){
 
 
 
-    
-    
-    //     gamePlay()
-    // function gamePlay(){
-    // ripple.addEventListener("click", () => {
-    //     bobber.style.visibility="visible"
-    //     fishingRod.style.visibility = "visible"
-    //     progress.style.visibility = "visible"
-    //     tenToZero()
-    //     setTimeout(()=>{
-    //         if(timeLeft <= 0){
+  imeLeft <= 0){
     //         bobber.style.visibility="hidden"
     //         fishingRod.style.visibility = "hidden"
     //         progress.style.visibility="hidden"}

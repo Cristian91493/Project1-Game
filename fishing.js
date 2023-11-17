@@ -136,13 +136,3 @@ function gamePlay(){
 
 
 
-
-
-  imeLeft <= 0){
-    //         bobber.style.visibility="hidden"
-    //         fishingRod.style.visibility = "hidden"
-    //         progress.style.visibility="hidden"}
-    //         timeLeft= 100
-    //     },10000)
-    // })
-    // }           

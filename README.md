@@ -6,3 +6,8 @@ instructions:
 4. To complete the puzzle you must match the colors of the squares, when they all match you will get an alert and recieve a reward.
 5. The reward will be a random choice of 4 fish.
 6. Click on the continue button to go back to fishing
+
+
+I tried to make a github pages but I already had one so I'm going to have to figure it out
+
+The website is https://github.com/cristian91493/cristian91493.github.io

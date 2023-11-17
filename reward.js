@@ -25,3 +25,16 @@ const fish4 = new Fish("transparent anglerfish",8,10,"/Images/fish4.png")
 let fishTypes = [fish1,fish2,fish3,fish4]
 
 let inventory = []
+
+rewardMessage = document.querySelector(".reward-message")
+fishPic = document.querySelector(".reward-pic")
+
+function randomFish(){
+    choice = Math.floor(Math.random()*4)
+    fishChoice = fishTypes[choice]
+    console.log(fishChoice)
+    rewardMessage.innerHTML=`You recieved a ${fishChoice.name} worth ${fishChoice.tokens} tokens that heals ${fishChoice.healthPoints} life poits`
+    fishPic.src=fishChoice.picture
+}
+
+randomFish()

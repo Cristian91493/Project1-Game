@@ -17,7 +17,6 @@ const fish2 = new Fish("rockfish",4,14,"/Images/fish2.png")
 
 const fish3 = new Fish("holographic spiner",6,12,"/Images/fish3.png")
 
-
 const fish4 = new Fish("transparent anglerfish",8,10,"/Images/fish4.png")
 
 

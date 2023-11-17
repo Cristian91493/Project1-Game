@@ -62,7 +62,6 @@ function castingForFish(){
 }
 
 
-// need to make this work
 function fishOnHook(){ 
     let chance= Math.floor(Math.random()*13-3)
     console.log(chance)

@@ -9,7 +9,7 @@ pBar = document.querySelector(".progress")
 //function for the timer for the 4 second count
 function updateFishingBar(fishingProgressBar, value, percentage){
     value = Math.round(value)
-    fishingProgressBar.querySelector(".fishing__progress__fill").style.width = `${percentage}%`
+    // fishingProgressBar.querySelector(".fishing__progress__fill").style.width = `${percentage}%`
     fishingProgressBar.querySelector(".fishing__progress__text").innerText = `${value/10} Secs`
 }
 fBar = document.querySelector(".fishing__progress")
@@ -26,7 +26,7 @@ function zeroToFour(){
 setInterval(function(){
     if(timeToFour<=30){
                 timeToFour+= 10
-                updateProgressBar(pBar, timeToFour,timeToFour)   
+                updateFishingBar(fBar, timeToFour,timeToFour)   
             }},1000)}
             
             // need to make this not count twice or keep stacking the countdown 
@@ -46,9 +46,7 @@ bobber = document.querySelector(".bobber")
 splash = document.querySelector(".splash")
 fishingRod= document.querySelector(".fishing-rod")
 progress= document.querySelector(".progress")
-// rewardButton = document.querySelector("end-reward")
 
-// console.log(rewardButton)
 function castingForFish(){
     
         bobber.style.visibility="visible"
@@ -85,14 +83,7 @@ function startPuzzle(){
     })
 }
 
-// function backToGame(){
-//     window.location.href = "index.html"
-// }
-// rewardButton.addEventListener("click", backToGame)
 
-// export function toReward(){
-//     return window.location.href = "reward.html"
-// }
 
 function gamePlay(){
     ripple.addEventListener("click", () => {
@@ -105,31 +96,6 @@ function gamePlay(){
     }
     gamePlay()
     
-class Fish {
-    constructor(nameOfFish, tokens,healthPoints,picture){
-        this.name  = nameOfFish;
-        this.tokens = tokens;
-        this.healthPoints = healthPoints
-        this.picture = picture
-    }
-}
-
-
-const fish1 = new Fish("trout",2,8,"/Images/fish1.png")
-
-const fish2 = new Fish("rockfish",4,14,"/Images/fish2.png")
-
-const fish3 = new Fish("holographic spiner",6,12,"/Images/fish3.png")
-
-
-const fish4 = new Fish("transparent anglerfish",8,10,"/Images/fish4.png")
-
-console.log(fish4.name)
-
-let fishTypes = [fish1,fish2,fish3,fish4]
-
-let inventory = []
-
 
 
 

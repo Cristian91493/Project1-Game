@@ -29,7 +29,7 @@ setInterval(function(){
                 updateFishingBar(fBar, timeToFour,timeToFour)   
             }},1000)}
             
-            // need to make this not count twice or keep stacking the countdown 
+            
 function tenToZero(){
 setInterval(function(){
     if(timeLeft>=1){
